@@ -129,6 +129,7 @@ import sys
 if sys.argv[1] != 'runserver':
     STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
+# Comentar isso para rodar o collecstatic
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")    
 ]
