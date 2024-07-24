@@ -1,23 +1,6 @@
+{% extends 'content/base.html' %}
 {% load static %}
-<!-- {% load bootstrap4 %} -->
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static '/style/main.css' %}">
-
-    <!---responsividade--->
-    <link rel="stylesheet" href="{% static '/style/responsive.css' %}">
-
-
-<!---owl css--->
-<link rel="stylesheet" href="{% static '/style/assets/owl/owl.carousel.min.css' %}">
-<link rel="stylesheet" href="{% static '/style/assets/owl/owl.theme.default.min.css' %}">
-
-    <title>LYNEFLIX</title>
-</head>
-<body>
+{% block content %}
     <header>
         <diV class="container">
             <img class="logo" src="{% static 'style/assets/img/logo.png' %}" alt="LYNEFLIX">
@@ -89,6 +72,4 @@
 <script src="{% static 'style/assets/js/owl/jquery.min.js' %}"></script>
 <script src="{% static 'style/assets/js/owl/owl.carousel.min.js' %}"></script>
 <script src="{% static 'style/assets/js/setup.js' %}"></script>
-
-</body>
-</html>
+{% endblock %}
